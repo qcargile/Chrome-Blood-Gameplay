@@ -83,6 +83,24 @@
       "license": "GPL-3.0-only",
       "licenseUrl": "https://github.com/qcargile/Chrome-Blood-Gameplay/releases/download/working-b88ca53afd5e/MO2-HELPERS-COPYING.txt",
       "noticeUrl": "https://github.com/qcargile/Chrome-Blood-Gameplay/releases/download/working-b88ca53afd5e/MO2-HELPERS-README.txt"
+    },
+    {
+      "name": "Chrome & Blood patches and overrides",
+      "version": "working-0ba0ec762a44",
+      "status": "working-pre-release",
+      "filename": "Chrome-Blood-Patches-0ba0ec762a44.zip",
+      "url": "https://github.com/qcargile/Chrome-Blood-Gameplay/releases/download/working-0ba0ec762a44/Chrome-Blood-Patches-0ba0ec762a44.zip",
+      "sha256": "0ba0ec762a44d6d77999232fb2f8d560f2d70aa7c4ee6cfbe31871558d78b1e2",
+      "bytes": 549328,
+      "fileCount": 280,
+      "modCount": 55,
+      "contents": "190 binary patches and 90 inline files",
+      "inventoryUrl": "https://github.com/qcargile/Chrome-Blood-Gameplay/releases/download/working-0ba0ec762a44/patches-files.json",
+      "noticeUrl": "https://github.com/qcargile/Chrome-Blood-Gameplay/releases/download/working-0ba0ec762a44/THIRD_PARTY_NOTICES.md",
+      "exclusions": [
+        "Five PDB debug-symbol files",
+        "Local metadata, logs, saves and runtime state excluded by the capture policy"
+      ]
     }
   ],
   "scope": "separate-launcher-supplement",
