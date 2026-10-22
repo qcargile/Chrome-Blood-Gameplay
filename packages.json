@@ -50,6 +50,41 @@
       "url": "https://github.com/qcargile/Chrome-Blood-Limited-HUD-Patch/releases/download/v1.0.0/Chrome-Blood-Limited-HUD-Patch-1.0.0.zip",
       "sha256": "c2c5433bcc3045bb741d381f7abb83e7b7b7f44f0ba76d17a29b2b38da4453cd",
       "bytes": 16221
+    },
+    {
+      "name": "Cyberpunk Conflict Studio",
+      "version": "1.0.1",
+      "status": "pinned-support-build",
+      "filename": "Cyberpunk-Conflict-Studio-1.0.1.zip",
+      "url": "https://github.com/qcargile/Cyberpunk-Conflict-Studio/releases/download/v1.0.1/Cyberpunk-Conflict-Studio-1.0.1.zip",
+      "sha256": "9958abb4cdc0baa4df92bde6f69524b4541f75f6caa5576a6a620d03aec39e0c",
+      "bytes": 66061246,
+      "sourceCommit": "64ba56154b800fad26f4eaf52e691d651f04e555",
+      "license": "MIT"
+    },
+    {
+      "name": "cb_collection_install.py",
+      "status": "source-helper",
+      "filename": "cb_collection_install.py",
+      "url": "https://github.com/qcargile/Chrome-Blood-Gameplay/releases/download/working-b88ca53afd5e/cb_collection_install.py",
+      "sha256": "d8332c31540e6e17284ccb300f9b4b123189d72cdaa4b2c2762beaaa930aa3e6",
+      "bytes": 26020,
+      "license": "GPL-3.0-only",
+      "licenseUrl": "https://github.com/qcargile/Chrome-Blood-Gameplay/releases/download/working-b88ca53afd5e/MO2-HELPERS-COPYING.txt",
+      "noticeUrl": "https://github.com/qcargile/Chrome-Blood-Gameplay/releases/download/working-b88ca53afd5e/MO2-HELPERS-README.txt"
+    },
+    {
+      "name": "collection_vfs_probe.ps1",
+      "status": "source-helper",
+      "filename": "collection_vfs_probe.ps1",
+      "url": "https://github.com/qcargile/Chrome-Blood-Gameplay/releases/download/working-b88ca53afd5e/collection_vfs_probe.ps1",
+      "sha256": "a7daf45b8072feb4cdd0d9c1deb4dc8db2d0d143490aac98ebefc5f12f39c847",
+      "bytes": 3797,
+      "license": "GPL-3.0-only",
+      "licenseUrl": "https://github.com/qcargile/Chrome-Blood-Gameplay/releases/download/working-b88ca53afd5e/MO2-HELPERS-COPYING.txt",
+      "noticeUrl": "https://github.com/qcargile/Chrome-Blood-Gameplay/releases/download/working-b88ca53afd5e/MO2-HELPERS-README.txt"
     }
-  ]
+  ],
+  "scope": "separate-launcher-supplement",
+  "nexusCollectionMembership": false
 }
