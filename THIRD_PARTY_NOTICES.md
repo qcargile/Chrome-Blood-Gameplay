@@ -100,3 +100,9 @@ Modified or redistributed original mod files remain under their original authors
 - r6/storages/PlayerGuideFramework/chrome-and-blood.json
 - r6/tweaks/zzzz_CB_RecordTypes.yaml
 - red4ext/config.ini
+
+## Captured patches and overrides
+
+The working patch archive contains C&B changes to the original mods identified in [patches-files.json](<https://github.com/qcargile/Chrome-Blood-Gameplay/releases/download/working-0ba0ec762a44/patches-files.json>). That inventory records the original mod pages or public source assets, required archive hashes, changed paths and resulting file hashes. Binary patches require those exact original archives.
+
+Original authors retain their rights. Existing permissions cover the included modifications; this archive does not grant a blanket license to those files. The GPLv3 grant remains limited to the two MO2 integration helpers.
