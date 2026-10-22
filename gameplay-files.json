@@ -1,0 +1,596 @@
+{
+  "schemaVersion": 1,
+  "archiveSha256": "b88ca53afd5e5485791f8ea43ffe63f4236aee111fd10a1bde24a364fc360151",
+  "files": [
+    {
+      "path": "archive/pc/mod/#DeceptiousBugFixes.archive.xl",
+      "bytes": 1565,
+      "sha256": "29418c5053f7039b8b9ea68df2e21d742b4c7e519a29634eb853d857ca1d1dc2"
+    },
+    {
+      "path": "archive/pc/mod/modlist.txt",
+      "bytes": 17786,
+      "sha256": "4c9434910d5b7a019ccba64e3923adcde9bafe6c29c0cc102761e3eff88cf431"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/bindings.json",
+      "bytes": 1634,
+      "sha256": "c0656a1d127c5183b13f8437c84cb546699dcacc926ced40fe08a2733ce7a895"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/BetterEddies/settings.json",
+      "bytes": 81876,
+      "sha256": "0268c436f64d3b49016b5c2f3ded91a2db4b2b7e60b39d8efceb3207dd7cf427"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/ChipwareExpansion/init.lua",
+      "bytes": 3144,
+      "sha256": "c31c5a5927e570c2c88473b1eaf8ba38e9fd62628c2574e46dac6f1dc36b9f54"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/coffee_maker_drink_dogtown/init.lua",
+      "bytes": 2469,
+      "sha256": "05e4d8e41501684d5b4df20ec5725f3e8e839fc279cbe63387a2893406d1966d"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/coffee_maker_drink_northside/init.lua",
+      "bytes": 2490,
+      "sha256": "fd058c9302103a640f79a2a60ca124e5dbbf1ed209c842985f0911ef6048381d"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/coffee_maker_h10_drink_glen/init.lua",
+      "bytes": 2490,
+      "sha256": "fd058c9302103a640f79a2a60ca124e5dbbf1ed209c842985f0911ef6048381d"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/coffee_maker_japantown/init.lua",
+      "bytes": 2490,
+      "sha256": "fd058c9302103a640f79a2a60ca124e5dbbf1ed209c842985f0911ef6048381d"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/DiscardAmmoOnReload/config.json",
+      "bytes": 100,
+      "sha256": "c4cbbf507f13f06cf5c6c63c98229a1030fa93789cf32366e663d1ba478b9ebf"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/freefly/config/config.json",
+      "bytes": 123,
+      "sha256": "c5fc47f3a9d36201b4ee27f073885f7bb714fdfe81d42145bd4f6e8477e7bd91"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/KeepDrawingTheLine/settings.json",
+      "bytes": 80,
+      "sha256": "527d94b6a01f165e17e580bb632641e00d9b246171765460c963f5fd3128947f"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/lifepath_bonuses_and_gang_corp_traits/settings.json",
+      "bytes": 15636,
+      "sha256": "9e6ba9aab58a480111ad9eea64dae10eee785c90eee4b125a26d2e1b3468cbd4"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/LUTSwitcher/data/settings.json",
+      "bytes": 563,
+      "sha256": "a8c109de736ef4db1ea70187bc0657e244bf1ca7103a162cca631425e5640e19"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/nativeSettings/init.lua",
+      "bytes": 64327,
+      "sha256": "7e7f5c2f65d877ec7b67a126123b1f41c5b2a8915f75ec777acb793bde272158"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/NovaOptics/settings.json",
+      "bytes": 4712,
+      "sha256": "8f6593f5bfa17faef919e899d7e2196ddf012a8a7e96ddb7f0945f9e4391a93a"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/NulledAngleCorrection/init.lua",
+      "bytes": 2384,
+      "sha256": "6b6f96b20150e72c04f7099c8e77bac3a6a90237d1661873b5de82785fe3a012"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/RenderPlaneFix/data/config.json",
+      "bytes": 348,
+      "sha256": "b5987c24f93eb5fdbe2e1b4751b589a292fbcef0ffc1832140b4c7a33107dbb1"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/TheLampLighter-StreetlampTimeScale/modsettings.json",
+      "bytes": 5043,
+      "sha256": "a2a25ca3b9bf5dcedbfa31fc58a41ed64dd200c60ddfadf21e553a39eb5a4dee"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/UnifiedModSettings/browserOrganization.json",
+      "bytes": 4367,
+      "sha256": "9b87dc60947fb06f4976f2c2e31e3e525a6b43f8f048404f8f0098c80ca1ecaf"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/UnifiedModSettings/favorites.json",
+      "bytes": 301,
+      "sha256": "024cc938fae1a1b878c903fd8cc8fe38c029e1d094d6c1eb3a8f4a85ec05de41"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/UnifiedModSettings/profiles/_managed.json",
+      "bytes": 659,
+      "sha256": "3a4f395c204757d5a436a382ba13d368dbb29572812d6375313721dbec8eef7b"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/UnifiedModSettings/profiles/_registry.json",
+      "bytes": 30,
+      "sha256": "0dc239247a93f4e97b7b0529741197358b75df44ade4aeb2d2360fd0644bdf12"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/UnifiedModSettings/profiles/chrome-blood-standard.json",
+      "bytes": 386325,
+      "sha256": "e6c20865312c20ec4ef8a7506ee539757c231ef41b2e601c0594350729ca14bd"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/UnifiedModSettings/ums_config.json",
+      "bytes": 145,
+      "sha256": "beb8371fb16bce16e0a73d64a6fb929b5b63940d8b3ff94d1b0f81686b03435f"
+    },
+    {
+      "path": "bin/x64/plugins/cyber_engine_tweaks/mods/WeatherSwitcher/Config/userconfig.json",
+      "bytes": 1364,
+      "sha256": "ca874e69d7ae3a1e222f1de272e4213bc14245cf54a2eec1486c77e652fdaaa1"
+    },
+    {
+      "path": "r6/scripts/ArmorUp/cyberwareScripts/reactiveArmor.reds",
+      "bytes": 5191,
+      "sha256": "ce75769550c96987ec506fc491a6db923eff8ef50cd65149c1214fc5ea02a954"
+    },
+    {
+      "path": "r6/scripts/ArmorUp/shieldPointsSystem.reds",
+      "bytes": 19404,
+      "sha256": "e3dee3b89ee44337550113c50a42ba75b2a696b7d9ae30e15ee09cd6a5773b12"
+    },
+    {
+      "path": "r6/scripts/BlackChrome/CyberdeckHelpers.reds",
+      "bytes": 816,
+      "sha256": "cf25bce941fb4e78a1e0a24dcc69feadac0eec6b8ab42ff3b3b69c5fea3f61b7"
+    },
+    {
+      "path": "r6/scripts/BlackChrome/CyberdeckSupport.reds",
+      "bytes": 4732,
+      "sha256": "42fee4340cba804641c4b6d6a46566ff45f2cdf9d718e8caac0dfd459873a900"
+    },
+    {
+      "path": "r6/scripts/CyberwareEx/CyberwareEx.Customization.reds",
+      "bytes": 1247,
+      "sha256": "a291bd4500a8246b1a80915e07c86d0ba6f3d8ce02ddf0da046e0f164a10343d"
+    },
+    {
+      "path": "r6/scripts/FastTravelTime/FastTravelTime.reds",
+      "bytes": 4814,
+      "sha256": "9debb548608f65fef0e793540e41cf55f1de220b1897110fc1defa523e08c81e"
+    },
+    {
+      "path": "r6/scripts/HUDPainter/PatchesForWorldMap.reds",
+      "bytes": 11958,
+      "sha256": "0c41a780814d87be2761a8fcceb3722b1d89a7f1bba5c493a6b71b2003cba67b"
+    },
+    {
+      "path": "r6/scripts/LUTSwitcher/LUTResources.reds",
+      "bytes": 12555,
+      "sha256": "3a20f4d7640dd74198758fb5c7a3c818f87a4626637e63164c76d1f23b9e6173"
+    },
+    {
+      "path": "r6/scripts/StealthRC.reds",
+      "bytes": 10687,
+      "sha256": "1b471e13dd627c9a7cd89a728ceb0e1adedfd70e2b2083a1d579577a3756f950"
+    },
+    {
+      "path": "r6/storages/PlayerGuideFramework/chrome-and-blood.json",
+      "bytes": 109304,
+      "sha256": "360f1b0fd69235f9ff85cc94ee4eeb602a1809d6ec20a8276b24554a1e26fa95"
+    },
+    {
+      "path": "r6/tweaks/_devel_sixteen/devel_sixteen.yaml",
+      "bytes": 8025,
+      "sha256": "d9c9384e58fda9acc53c815df8d9fa878cbe6ef9b4925fb39bdc72afb11ab1b2"
+    },
+    {
+      "path": "r6/tweaks/Arasaka_Nobunaga_Scope.yaml",
+      "bytes": 3462,
+      "sha256": "b0eee7ff7d24626dc1b6dc3a020434a3f84476d4b187812ebcff1ab13807e4d9"
+    },
+    {
+      "path": "r6/tweaks/aston_martin_db11/aston_martin_db11.yaml",
+      "bytes": 4366,
+      "sha256": "3afde5282a536a981113add7793d73fc68030a8eed23d4d1aacfb519a479885d"
+    },
+    {
+      "path": "r6/tweaks/Batmobile_ArchiveXL/batmobilebvs.yaml",
+      "bytes": 1164,
+      "sha256": "b9c151f849120121d0eac5feac87197ec8fd9b23e5246cf308eb77b7553fd39a"
+    },
+    {
+      "path": "r6/tweaks/bugatti_v16_tourbillon/bugatti_v16_tourbillon.tweak",
+      "bytes": 13886,
+      "sha256": "7dccdbbc4a2e861ea3878a17d0a2ac39a9ea7f4ddb6f353cea148d0ef52a8a7a"
+    },
+    {
+      "path": "r6/tweaks/carreragt/carreragt.yaml",
+      "bytes": 4171,
+      "sha256": "9e7ba9dfc9c380af0f9de2c1942d127aa29f9200101886fca27a8f81968c9248"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_assaultRifleChip.yaml",
+      "bytes": 5564,
+      "sha256": "c00061bb6355c49750b26e6d1f323064ccc535ac3613fd71ff518e0e0c67f7ea"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_boxingChip.yaml",
+      "bytes": 8809,
+      "sha256": "9ce38184d9125b94ca374ef565cc3b656891494425817951481f4dbd726633f5"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_coldBloodChip.yaml",
+      "bytes": 10836,
+      "sha256": "f15cacf51fb0a2b074111c0f53e1a94d762e130ce0d888d524dae9781ecf4388"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_drunkenFist.yaml",
+      "bytes": 11721,
+      "sha256": "b35646064b94a3888dcb381e9cc50e801fbb628567093fb128238ded3bac5e7a"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_kenjutsuChip.yaml",
+      "bytes": 8580,
+      "sha256": "a283de14f99b71fe825a6a44763639b1146064bee23d43fd8d1c77a363cfffc2"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_ninja.yaml",
+      "bytes": 6808,
+      "sha256": "7c74252d0ac69bf7124fea996b1a722e9f47c8d916a04ad249c316bfcd63c98c"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_policeChip.yaml",
+      "bytes": 6290,
+      "sha256": "83b0c71526f99a20c6e3197cc430f54b733244218d17a3ea316fdbb64636fa1b"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_poseurCoolChip.yaml",
+      "bytes": 5499,
+      "sha256": "26fc0917209ffeb9ba12dfb7155e9bd184e1b20fe2c0a957febaec0f97b169c8"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_poseurCorpoChip.yaml",
+      "bytes": 5879,
+      "sha256": "00316ac173fe493757442d4760076f22fb3b199dcf31d1d56f1bcb527eace532"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_poseurTechChip.yaml",
+      "bytes": 6335,
+      "sha256": "e28d95b8f8a9012b3d2eed96ff8f75471b17c7293daa50b0c029d70666460453"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_psychoChip.yaml",
+      "bytes": 8548,
+      "sha256": "ac8b04f13ee31bae81145992a27a9763bf3e50f0a0c23dc9131e6b9549e8605f"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_rebeccaChip.yaml",
+      "bytes": 7445,
+      "sha256": "40b842daebc31f9b3d33a8f7f0e06c8d244180cf1324b1e27911ba60274f7fc0"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_ringMasterChip.yaml",
+      "bytes": 7542,
+      "sha256": "408143641e454b43ffcf2cf91525d6c14c0642cc151f294dcf258793bcfdfc02"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_scavChip.yaml",
+      "bytes": 4252,
+      "sha256": "b00f7a67476eb5d158e87850748c5bf9584522cadb0e9448f2858616dfa3542d"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_sniperTraining.yaml",
+      "bytes": 4438,
+      "sha256": "a11e65988f9ba3fab12f249450bfae0a89fe8489814b2815d1f2059f93ab8159"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/memoryChips/z_tigerClawChip.yaml",
+      "bytes": 8920,
+      "sha256": "0e0589ca08a82cb2879f99b2fcbb1fa7b6bc81ee545f5e2c3a6302a9f0d0b7d5"
+    },
+    {
+      "path": "r6/tweaks/ChipwareExpansion/chips/softwareChips/z_spellsword.yaml",
+      "bytes": 4720,
+      "sha256": "36ef07f9ebec38c2b48558b900b30b6abb8c275397346f3d3c041d28d5dc56dc"
+    },
+    {
+      "path": "r6/tweaks/cornmilf/apollo_project_evo_2022.tweak",
+      "bytes": 9630,
+      "sha256": "fe97f21d1b1774de1b9a74a3ac43823d0eb5c1de6f5e675958304225e5adcec9"
+    },
+    {
+      "path": "r6/tweaks/CyberEnemies/newEnemies/butcher.yaml",
+      "bytes": 1105,
+      "sha256": "c14f9cdfded679f3ee0dc9022071a89f02c6b91f22503cdf7adec12ae3c9d638"
+    },
+    {
+      "path": "r6/tweaks/CyberEnemies/npcChanges/1_scavs.yaml",
+      "bytes": 1262,
+      "sha256": "a01187f4eb23527c64fb28a1053a8bf14520218ff7ded0f786ce998393da506c"
+    },
+    {
+      "path": "r6/tweaks/EnemiesMeleeAttacksFixes/AIActionSmartComposite/OneHanded/Corpo_LongBlade.MeleeChargeJump01Selector.yaml",
+      "bytes": 540,
+      "sha256": "27939b3750557dc06b73086a29f075dce6d348c50a5d23e27cd1ccbf5bebc5b9"
+    },
+    {
+      "path": "r6/tweaks/EnemiesMeleeAttacksFixes/AIActionSmartComposite/OneHanded/Corpo_LongBlade.MeleeLightCloseCombo02Selector.yaml",
+      "bytes": 475,
+      "sha256": "d7726d80ceea663522f8dd3b38ff11c6e999bdb0cd927e464aaae750c9bd1084"
+    },
+    {
+      "path": "r6/tweaks/EnemiesMeleeAttacksFixes/AIActionSmartComposite/OneHanded/Corpo_OneHandedClub.MeleeChargeJump01Selector.yaml",
+      "bytes": 544,
+      "sha256": "6df46f8df3814588bde068fc737eb2b9de2ebe6feb8ad678a27c8ba8875314f4"
+    },
+    {
+      "path": "r6/tweaks/EnemiesMeleeAttacksFixes/AIActionSmartComposite/OneHanded/Corpo_TwoHandedClub.MeleeChargeJump01Selector.yaml",
+      "bytes": 544,
+      "sha256": "18296639adca9428762e63609c4dba23352d14aa08065d439b5f64709a7a45ea"
+    },
+    {
+      "path": "r6/tweaks/EnemiesMeleeAttacksFixes/AIActionSmartComposite/OneHanded/Gang_LongBlade.MeleeChargeJump01Selector.yaml",
+      "bytes": 539,
+      "sha256": "45d5684aabed6a2e424d93158af833e3ac72e75c1dd9bb182dfc1de18ab1c784"
+    },
+    {
+      "path": "r6/tweaks/EnemiesMeleeAttacksFixes/AIActionSmartComposite/OneHanded/Gang_LongBlade.MeleeLightCloseCombo02Selector.yaml",
+      "bytes": 474,
+      "sha256": "1b7d2c1dfaa10b5efdc14a99b8fa6fe8c5fb5cd51bf8c93763d7efbb197b9a59"
+    },
+    {
+      "path": "r6/tweaks/EnemiesMeleeAttacksFixes/AIActionSmartComposite/OneHanded/Gang_OneHandedClub.MeleeChargeJump01Selector.yaml",
+      "bytes": 543,
+      "sha256": "fc896d9cae824d076dc7bddddee37f18460a8b5d9ec0fb9423c95a00695bb671"
+    },
+    {
+      "path": "r6/tweaks/EnemiesMeleeAttacksFixes/AIActionSmartComposite/OneHanded/Gang_TwoHandedClub.MeleeChargeJump01Selector.yaml",
+      "bytes": 543,
+      "sha256": "87bbeaeb89fe77d6f05c3b24349e0cf89cc4f703a22d650065df43b9c26c9f59"
+    },
+    {
+      "path": "r6/tweaks/EnemiesMeleeAttacksFixes/AISubActionAttackWithWeapon/Base/KatanaActions/MeleeKatanaActions.KatanaSingleMeleeAttackStrong02FromDashAttackData.yaml",
+      "bytes": 626,
+      "sha256": "61149343e863d6e37611bbc7d434f97acab9514667d8ec0e34d9db56ac017374"
+    },
+    {
+      "path": "r6/tweaks/Enemy Aggro Improvements/reaction_to_gunshots/schema.tweak",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "r6/tweaks/EnemyArmorOverhaul/abilities/weaponChanges.yaml",
+      "bytes": 3151,
+      "sha256": "4fd3fc38457a255dd9818729bb05ebf7be6c3e177578371a959f87e069af4709"
+    },
+    {
+      "path": "r6/tweaks/EnemyArmorOverhaul/armorToCharacter.yaml",
+      "bytes": 770,
+      "sha256": "5c391cc06d52add129f3d4f9f9d369149a75dac3fdd105d8c2deb388bc91e428"
+    },
+    {
+      "path": "r6/tweaks/EnemyArmorOverhaul/perk/kataPerk.yaml",
+      "bytes": 6966,
+      "sha256": "b2de74b5ebe3eeed8980edbd26f0a9b1a331de16cfedae1a4e8cf1ca65c17bb1"
+    },
+    {
+      "path": "r6/tweaks/erenn77/2017_mercedes_amg_gtr.tweak",
+      "bytes": 10755,
+      "sha256": "e47b445db787e62c22565eb59c425abb23be17f106d7dec425f084ce7843a36e"
+    },
+    {
+      "path": "r6/tweaks/ezio_archive_xl/batcycle_babs.yaml",
+      "bytes": 1276,
+      "sha256": "b2456d554c65a5aef4ecc4edbfe91c083eb17ebb2bbe89f4e7faeec7fca2ca0d"
+    },
+    {
+      "path": "r6/tweaks/ferrari_458sp/ferrari_458sp.yaml",
+      "bytes": 9670,
+      "sha256": "a53602a982e8fa60e8f5a1dc899ed1a42c589c7f49a9f826095be06e0e82fc69"
+    },
+    {
+      "path": "r6/tweaks/ferrari_daytona/ferrari_daytona.yaml",
+      "bytes": 4743,
+      "sha256": "653610587d59f568e818aae6898990ef4f28562cf27858b64f36923c135905dd"
+    },
+    {
+      "path": "r6/tweaks/ford/ford.yaml",
+      "bytes": 6739,
+      "sha256": "ab6e9f47b78232213abc4d362381907a9efd3f9a1cb28e28969370a29318861b"
+    },
+    {
+      "path": "r6/tweaks/genesis_x/genesis_x.yaml",
+      "bytes": 9573,
+      "sha256": "4e58e89beb6a7456342906e688fe3aece7064c54963ba4110ad4e2d61c819cdd"
+    },
+    {
+      "path": "r6/tweaks/Iconic Cyberarm Pack/MK VII Helio Trace.yaml",
+      "bytes": 4701,
+      "sha256": "d22be005653a574dc68b6fd00b5bc91dfb4a5525a56f3cdb9d36c2d59eb75711"
+    },
+    {
+      "path": "r6/tweaks/krnlnik/dodge_challenger_srt_demon.tweak",
+      "bytes": 11860,
+      "sha256": "7e2928e7be9bd73dbb40c064ee2b12315577da2ad9d7972c81d99b7a65c2024b"
+    },
+    {
+      "path": "r6/tweaks/krnlnik/toyota_supra_a90_hks.tweak",
+      "bytes": 11868,
+      "sha256": "37e159179a40a248132322f22e78d5171e191ed463b8d50a1d94c5b72226844f"
+    },
+    {
+      "path": "r6/tweaks/lamborghini_temerario/lamborghini_temerario.yaml",
+      "bytes": 4662,
+      "sha256": "cfa392a1f4d8d9913027ec75c0a23115552b7897d350e39b66f1e9300a2fc717"
+    },
+    {
+      "path": "r6/tweaks/lamborghini_veneno/lamborghini_veneno.yaml",
+      "bytes": 4426,
+      "sha256": "009c0a9ff7df220844a1028b7eeb55c5eab0a7b994a290e16864f91d7f20605c"
+    },
+    {
+      "path": "r6/tweaks/lexus_lc500/lexus_c500.yaml",
+      "bytes": 4505,
+      "sha256": "484f169f7935f11f2c61d6273d80a7ab1076e656122547bb9571b0871132d7dc"
+    },
+    {
+      "path": "r6/tweaks/lotus_evija/lotus_evija.yaml",
+      "bytes": 7911,
+      "sha256": "e9286f17bf844212732323db948e891c52dc68b216f7a18dda44fb66ad2ec1d0"
+    },
+    {
+      "path": "r6/tweaks/mazda_rx7_fortune/mazda_rx7_fortune.yaml",
+      "bytes": 9358,
+      "sha256": "df81b9e3237127f758b4c9fc999db559295c6e2be48be2d95ec7f739d5e3b622"
+    },
+    {
+      "path": "r6/tweaks/mazda_rx7_wbk/mazda_rx7_wbk.yaml",
+      "bytes": 9251,
+      "sha256": "68b2103e0ce33c25e5165dd086e85cc4d1be4ac313681f42611296e357825b17"
+    },
+    {
+      "path": "r6/tweaks/McLaren Senna mod/mclaren_senna.yaml",
+      "bytes": 1414,
+      "sha256": "7a15cb566e0f20d0925409c8d8de3a8471f3baef9dec255b00e463bd8512b5b5"
+    },
+    {
+      "path": "r6/tweaks/mclaren_p1.yaml",
+      "bytes": 3921,
+      "sha256": "c068e4696f5a479f75ea734f716f23030c8c4d7e609d25c36796cecb24fb573b"
+    },
+    {
+      "path": "r6/tweaks/mclaren_p1_gtr/mclaren_p1_gtr.yaml",
+      "bytes": 4300,
+      "sha256": "a7b35e7809f5fb602b905b6502b6b766c94f7c7cb50c50fd9b2758e3c5630a9e"
+    },
+    {
+      "path": "r6/tweaks/mercedes_one/mercedes_one.yaml",
+      "bytes": 4648,
+      "sha256": "cc67df931a4ec7181ea0e2ae86bf00988d618dea2d9da0043d39b8eddf0b81bc"
+    },
+    {
+      "path": "r6/tweaks/misoru_boomerang/misoru_boomerang.yaml",
+      "bytes": 21841,
+      "sha256": "de2965053f3825dc59f66f69f7094de3a5dfdf23614f8975f97c1138de924b74"
+    },
+    {
+      "path": "r6/tweaks/misoru_boomerang/zzz_misoru_boomerang_patch.yaml",
+      "bytes": 5906,
+      "sha256": "7da0595db6e00faba1c9f2e5b4c36939ff3e62f1fe2f0e5ae471c9e0456b5976"
+    },
+    {
+      "path": "r6/tweaks/misoru_cache_biotech/misoru_cache_biotech_bloom.yaml",
+      "bytes": 24248,
+      "sha256": "4094dc17ac3657fbb4d34ff08d3bccf12bcd4d542649ca55f169166f49b6259e"
+    },
+    {
+      "path": "r6/tweaks/misoru_cache_biotech/misoru_cache_biotech_ivy.yaml",
+      "bytes": 8013,
+      "sha256": "2b568832d34a569e8865e3f8552ec4cb8b6ec29f2a3b2585bf873458f1bbb461"
+    },
+    {
+      "path": "r6/tweaks/misoru_tornado/misoru_tornado.yaml",
+      "bytes": 16184,
+      "sha256": "f9eb76087d7c5fc1a5a0ab851a86e5ceb522da36eab0dcb388e995e006c02a05"
+    },
+    {
+      "path": "r6/tweaks/miura_wbk/miurawbk.yaml",
+      "bytes": 6351,
+      "sha256": "54a5019a2c0b13d228a2379d96cea37d96f7cb4cf9e7ae8e9300b22e07c92732"
+    },
+    {
+      "path": "r6/tweaks/mjolnir/Gleipnir/GleipnirAbilities.yaml",
+      "bytes": 10402,
+      "sha256": "4559c11a3946c66fbbd487e8fbf3305722aad28c924d7b1571a7300344e65cce"
+    },
+    {
+      "path": "r6/tweaks/Okrasha/dodge_viper_1999.tweak",
+      "bytes": 11217,
+      "sha256": "3a851b4b9d02320413f606a41bdcb17f40f8bb436ebb4a9258da5906fd7ba122"
+    },
+    {
+      "path": "r6/tweaks/oranje3_nomad_tumbler/oranje3_nomad_tumbler.yaml",
+      "bytes": 17492,
+      "sha256": "4f2feaa65f491899c9e64d380f82890cb477e1da498a99e9f4460b07c71c3cb9"
+    },
+    {
+      "path": "r6/tweaks/porsche_gt3_rs/porsche_gt3_rs.yaml",
+      "bytes": 4656,
+      "sha256": "1bdc5086eb65904f6ee668b5cafebc174de79cf8038c4219eee0154f7fff16d5"
+    },
+    {
+      "path": "r6/tweaks/porsche_turbo_s/porsche_turbo_s.yaml",
+      "bytes": 4434,
+      "sha256": "1e6ac83ded9294893ff291515248b1925c79cde08258952c215d4d8808bfaee7"
+    },
+    {
+      "path": "r6/tweaks/running_man.yaml",
+      "bytes": 3103,
+      "sha256": "883704574e7246db59138d6e3506eb9d09b294b0dc33c953e5b5666e69dc2196"
+    },
+    {
+      "path": "r6/tweaks/RX7/rx7.yaml",
+      "bytes": 3424,
+      "sha256": "189ab50c5e43143aa302e436b80db942219d5c5004061d627df15517dd506d51"
+    },
+    {
+      "path": "r6/tweaks/SDH0_ColorPack/sdh0_colorpack.yaml",
+      "bytes": 899,
+      "sha256": "e18770c4b19a57263f5a450cc0e10875ebbf29e143c893580ae609a6f5938046"
+    },
+    {
+      "path": "r6/tweaks/valkyrie/valkyrie.yaml",
+      "bytes": 4398,
+      "sha256": "37a30419590ac7e338fe69c255e1e5e0bf99db6c02d9b901680dc339a6229e81"
+    },
+    {
+      "path": "r6/tweaks/VirtualCarDealer/mclaren_p1.yaml",
+      "bytes": 396,
+      "sha256": "adcbd457e8f6aec7df6d152f03d0980d44d134b178d0e7a81d0545369510ec0e"
+    },
+    {
+      "path": "r6/tweaks/yellingintothevoid/void_Ducati_Supersport.yaml",
+      "bytes": 16985,
+      "sha256": "ac5717d36d0cf68c5d533b83c19007395a0281e8381b5f752964485c4ed1615a"
+    },
+    {
+      "path": "r6/tweaks/yellingintothevoid/void_Lamborghini_Murcielago_SV.yaml",
+      "bytes": 23690,
+      "sha256": "600b4e410e64f961ca0f8efdba9f846b5666a4b3007cd8a56b8039036a5c3c33"
+    },
+    {
+      "path": "r6/tweaks/yellingintothevoid/void_Mitsubishi_Eclipse_00_base.yaml",
+      "bytes": 18678,
+      "sha256": "1321566a510f19100f759eea9ddfd8540296b414366d32d19426561f1035593b"
+    },
+    {
+      "path": "r6/tweaks/yellingintothevoid/void_Nissan_350Z_00_base.yaml",
+      "bytes": 10559,
+      "sha256": "6c62fb05e27c0eee74228dc003a90dc74116c47e48467f4669fcf4f869feeb2d"
+    },
+    {
+      "path": "r6/tweaks/yellingintothevoid/void_Toyota_GT86_00_base.yaml",
+      "bytes": 15122,
+      "sha256": "924f816ce4ce19469f306dd0e448ca476920f09bc374f6c5921fe0291b969977"
+    },
+    {
+      "path": "r6/tweaks/zzzz_CB_RecordTypes.yaml",
+      "bytes": 1091,
+      "sha256": "4fe938ea7b7925db0e09a1cdbf767aa19e7f9220507a8c9ed8c7d1766661cfec"
+    },
+    {
+      "path": "red4ext/config.ini",
+      "bytes": 291,
+      "sha256": "06478d643528fa9d4dd9c047322aff4c2aee668be2f202b181f3db86ad1ea865"
+    },
+    {
+      "path": "r6/ChromeBlood/THIRD_PARTY_NOTICES.txt",
+      "bytes": 7034,
+      "sha256": "bf981f62b0db83d5fc78359539578cf4f5777002ad5ed46dd7be48806c9d8532"
+    }
+  ]
+}

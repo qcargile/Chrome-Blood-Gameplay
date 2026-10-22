@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "status": "working-pre-release",
+  "packages": [
+    {
+      "name": "Modlist Settings - Standard Profile",
+      "version": "working-b88ca53afd5e",
+      "filename": "Chrome-Blood-Gameplay-b88ca53afd5e.zip",
+      "url": "https://github.com/qcargile/Chrome-Blood-Gameplay/releases/download/working-b88ca53afd5e/Chrome-Blood-Gameplay-b88ca53afd5e.zip",
+      "sha256": "b88ca53afd5e5485791f8ea43ffe63f4236aee111fd10a1bde24a364fc360151",
+      "md5": "22d54485121eec20439f3fdecd2aa4fa",
+      "bytes": 252785,
+      "fileCount": 118,
+      "exclusions": [
+        "meta.ini",
+        ".git/** and .codex/**",
+        "r6/logs/** and *.log",
+        "UserSettings.json",
+        "save and saves directories",
+        "bin/x64/plugins/cyber_engine_tweaks/layout.ini",
+        "bin/x64/plugins/cyber_engine_tweaks/persistent.json",
+        "red4ext/plugins/Codeware/Persistent/**",
+        "compiler_settings paths",
+        "backup and temporary files"
+      ]
+    },
+    {
+      "name": "Chrome-Blood-Compatibility",
+      "version": "1.0.0",
+      "status": "existing-public-package",
+      "filename": "Chrome-Blood-Compatibility-1.0.0.zip",
+      "url": "https://github.com/qcargile/Chrome-Blood-Compatibility/releases/download/v1.0.0/Chrome-Blood-Compatibility-1.0.0.zip",
+      "sha256": "6c81211b6895a19f5346ebff28861b6395563fec74e52c7fcff383b186149bdd",
+      "bytes": 9238767
+    },
+    {
+      "name": "Chrome-Blood-Dark-Future-Patch",
+      "version": "1.0.0",
+      "status": "existing-public-package",
+      "filename": "Chrome-Blood-Dark-Future-Patch-1.0.0.zip",
+      "url": "https://github.com/qcargile/Chrome-Blood-Dark-Future-Patch/releases/download/v1.0.0/Chrome-Blood-Dark-Future-Patch-1.0.0.zip",
+      "sha256": "ecc2e43c85f1b0122de05e2128475eabc8845976e408567234a4c8ec4fbabcaf",
+      "bytes": 2486
+    },
+    {
+      "name": "Chrome-Blood-Limited-HUD-Patch",
+      "version": "1.0.0",
+      "status": "existing-public-package",
+      "filename": "Chrome-Blood-Limited-HUD-Patch-1.0.0.zip",
+      "url": "https://github.com/qcargile/Chrome-Blood-Limited-HUD-Patch/releases/download/v1.0.0/Chrome-Blood-Limited-HUD-Patch-1.0.0.zip",
+      "sha256": "c2c5433bcc3045bb741d381f7abb83e7b7b7f44f0ba76d17a29b2b38da4453cd",
+      "bytes": 16221
+    }
+  ]
+}
