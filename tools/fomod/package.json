@@ -1,0 +1,16 @@
+{
+  "name": "chrome-blood-fomod-resolver-proof",
+  "version": "0.0.0",
+  "private": true,
+  "license": "GPL-3.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@nexusmods/fomod-installer-native": "0.13.4"
+  }
+}

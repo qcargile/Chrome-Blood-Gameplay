@@ -1,0 +1,47 @@
+[
+  {
+    "path": "1.PNG",
+    "size": 273734,
+    "sha256": "bc837ff15053db64fcb7d5676eea5e537682e5476a5ad982cf7b6ebf36515682"
+  },
+  {
+    "path": "banner.png",
+    "size": 604820,
+    "sha256": "215a9c379ea2351b01f81ef05b738371d3917aba8f938ed1538c1e6460791b3f"
+  },
+  {
+    "path": "clean.jpg",
+    "size": 747151,
+    "sha256": "90ad44ab4b086b7e9f94b59ba8a8a42091d37de3e9bc794ba6239a17086f48a3"
+  },
+  {
+    "path": "CleanGreenScanner/archive/pc/mod/basegame_cleangreen.archive",
+    "size": 8192,
+    "sha256": "233b7bbf8cdf3c77eef0303c69ac9ec32ef6787c7447defa3022e66151210224"
+  },
+  {
+    "path": "CleanScanner/archive/pc/mod/basegame_clean.archive",
+    "size": 8192,
+    "sha256": "8bc20e279e1ba24a81ac48f7f575b788250bc4a87ed6b31f528c33372baa6ff7"
+  },
+  {
+    "path": "fomod/info.xml",
+    "size": 358,
+    "sha256": "26e0d78f547b09ab4e09587d3960eb07978f1e1052cdb5e324c24cbb9978dc89"
+  },
+  {
+    "path": "fomod/ModuleConfig.xml",
+    "size": 3840,
+    "sha256": "dfc2dc171e690955e41e2f44d82b1c7c44e9d376a8cab3b3855612ecf4d03ddd"
+  },
+  {
+    "path": "green.jpg",
+    "size": 622723,
+    "sha256": "cbc2195dd1789298161d24a3a6e9de336357dbe40b03108bbb846b1a66931b79"
+  },
+  {
+    "path": "pepe.png",
+    "size": 303166,
+    "sha256": "e5f4fd81f4ca4dd257cf7abed19dc46caa523bb9f57cbb5eaae5c3ac317b06b8"
+  }
+]

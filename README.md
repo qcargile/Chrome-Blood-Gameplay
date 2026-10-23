@@ -30,6 +30,12 @@ The archive includes current C&B gameplay/settings and LUT Switcher/HUD Painter 
 
 The earlier Collection-member example was removed because C&B supplemental files are separate from the Nexus Collection. No Nexus Collection revision was published or changed by this repository.
 
+## FOMOD resolver source
+
+[The FOMOD resolver](tools/fomod/README.txt) applies the list's recorded installer choices. Its C&B scripts are licensed under GPLv3. The matching Nexus Mods FOMOD 0.13.4 source, build inputs, dependency source and license texts are included under `tools/fomod`.
+
+This component's license does not select a license for the separate launcher or NXM relay. These are source materials for the installer; players do not need to install them manually.
+
 ## Patches and overrides
 
 [Download the working patches](<https://github.com/qcargile/Chrome-Blood-Gameplay/releases/download/working-0ba0ec762a44/Chrome-Blood-Patches-0ba0ec762a44.zip>)
