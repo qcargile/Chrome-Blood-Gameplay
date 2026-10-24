@@ -1,11 +1,15 @@
 # Chrome & Blood Gameplay
 
-Chrome & Blood has two separate sources:
+The native Chrome & Blood installation uses two separate sources:
 
 - The Nexus Collection contains original Nexus mod files.
 - This GitHub repository catalogs the separate C&B launcher supplement: custom gameplay, settings, overrides and integration helpers.
 
-The launcher is responsible for acquiring and applying both sources. Players should not need to gather the supplemental files one by one. This catalog is not a complete modlist, a Nexus Collection manifest or a signed installation/update recipe. The next signed launcher release must bind these assets before automatic acquisition can use them.
+The C&B installer combines the original Nexus downloads with the matching GitHub files using a signed release. These working snapshots are component packages, not a complete modlist.
+
+The new installer and release feed are in private testing. For the current public release, use the [installation guide](https://qcargile.github.io/Chrome-Blood/install.html). This repository is also the planned home for the single Windows installer EXE and its signed release feed.
+
+When the installer is publicly released, its download will include the exact EXE's SHA-256 checksum and a matching VirusTotal report link. The report shows the scan date and engine results; it is not a guarantee of safety. There is no public native installer download or VirusTotal report for it here yet.
 
 This is an unofficial fan work and is not approved or endorsed by CD PROJEKT RED. The files are free and are not paywalled.
 
