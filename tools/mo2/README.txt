@@ -9,3 +9,5 @@ MO2: https://github.com/ModOrganizer2/modorganizer
 USVFS: https://github.com/ModOrganizer2/usvfs
 
 This is an unofficial fan work and is not approved or endorsed by CD PROJEKT RED.
+
+Update notices require a compatible Chrome & Blood launcher installation. The helper checks once when MO2 opens and displays an available update in MO2's Notifications area. It does not install updates, and an unavailable check does not block MO2.

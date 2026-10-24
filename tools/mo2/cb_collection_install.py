@@ -3,10 +3,11 @@ import json
 import os
 import stat
 import subprocess
+from datetime import date
 from pathlib import Path, PurePosixPath
 
 import mobase
-from PyQt6.QtCore import QTimer
+from PyQt6.QtCore import QCoreApplication, QProcess, QTimer
 
 
 MAXIMUM_REQUEST_BYTES = 16 * 1024 * 1024
@@ -14,6 +15,9 @@ MAXIMUM_FILE_BYTES = 4 * 1024 * 1024 * 1024
 MAXIMUM_ARCHIVE_BYTES = 5 * 1024 * 1024 * 1024
 SUPPORTED_SEPARATOR_COLOR = r"@Variant(\0\0\0\x43\x1\xff\xff\x31\x31\0\0\0\0\0\0)"
 PREINSTALLED_MODE = "preinstalled"
+MAXIMUM_NOTICE_OUTPUT_BYTES = 4096
+MAXIMUM_HOST_STATE_BYTES = 16 * 1024 * 1024
+NOTICE_CAPABILITY_PATH = "resources/capabilities/mo2-release-notice.json"
 
 
 def request_install_mode(request):
@@ -73,6 +77,85 @@ def read_bytes(path, maximum):
         raise ValueError("collection.file-bound")
     with open(extended(item), "rb") as stream:
         return stream.read(maximum + 1)
+
+
+def sha256(value):
+    return hashlib.sha256(value).hexdigest()
+
+
+def strict_json(value):
+    def distinct(pairs):
+        result = {}
+        for key, item in pairs:
+            if key in result:
+                raise ValueError("collection.duplicate-json-key")
+            result[key] = item
+        return result
+    return json.loads(value.decode("utf-8"), object_pairs_hook=distinct)
+
+
+def valid_hash(value):
+    return isinstance(value, str) and len(value) == 64 and all(character in "0123456789abcdef" for character in value)
+
+
+def valid_id(value):
+    return isinstance(value, str) and 0 < len(value) <= 128 and value not in (".", "..") \
+        and not value.endswith(".") and all(
+        character.isascii() and (character.isalnum() or character in "-._") for character in value)
+
+
+def trusted_chrome_blood_host():
+    local_app_data = os.environ.get("LOCALAPPDATA")
+    if not local_app_data or not Path(local_app_data).is_absolute():
+        return None
+    app = Path(local_app_data) / "ChromeAndBlood" / "app"
+    pointer_bytes = read_bytes(app / "current.json", MAXIMUM_NOTICE_OUTPUT_BYTES)
+    pointer = strict_json(pointer_bytes)
+    release_id = pointer.get("releaseId")
+    installed_hash = pointer.get("installedReleaseSha256")
+    if pointer.get("schemaVersion") != 1 or not valid_id(release_id) or not valid_hash(installed_hash):
+        return None
+    installed_bytes = read_bytes(app / "installed-releases" / f"{release_id}.json", MAXIMUM_HOST_STATE_BYTES)
+    if sha256(installed_bytes) != installed_hash:
+        return None
+    installed = strict_json(installed_bytes)
+    manifest_hash = installed.get("hostPackageManifestSha256")
+    if installed.get("schemaVersion") != 2 or installed.get("releaseId") != release_id \
+            or installed.get("slotRelativePath") != f"releases/{release_id}" or not valid_hash(manifest_hash):
+        return None
+    host_root = app / "releases" / release_id / "payload" / "host"
+    manifest_bytes = read_bytes(host_root / "package-manifest.json", MAXIMUM_HOST_STATE_BYTES)
+    if sha256(manifest_bytes) != manifest_hash:
+        return None
+    manifest = strict_json(manifest_bytes)
+    files = manifest.get("files")
+    if manifest.get("schemaVersion") != 1 or manifest.get("selfContained") is not True \
+            or not isinstance(files, list) or not 1 <= len(files) <= 4096:
+        return None
+    executable = [item for item in files if isinstance(item, dict)
+                  and item.get("path", "").casefold() == "chromeblood.exe"]
+    capability = [item for item in files if isinstance(item, dict)
+                  and item.get("path", "").casefold() == NOTICE_CAPABILITY_PATH]
+    if len(executable) != 1 or type(executable[0].get("size")) is not int \
+            or executable[0]["size"] <= 0 or not valid_hash(executable[0].get("sha256")):
+        return None
+    if len(capability) != 1 or type(capability[0].get("size")) is not int \
+            or not 0 < capability[0]["size"] <= MAXIMUM_NOTICE_OUTPUT_BYTES \
+            or not valid_hash(capability[0].get("sha256")):
+        return None
+    host = physical(host_root / "ChromeBlood.exe")
+    if file_size(host) != executable[0]["size"] or digest(host) != executable[0]["sha256"]:
+        return None
+    capability_path = physical(host_root / NOTICE_CAPABILITY_PATH)
+    capability_bytes = read_bytes(capability_path, MAXIMUM_NOTICE_OUTPUT_BYTES)
+    if len(capability_bytes) != capability[0]["size"] or sha256(capability_bytes) != capability[0]["sha256"]:
+        return None
+    declaration = strict_json(capability_bytes)
+    if set(declaration) != {"schemaVersion", "protocol", "commands"} \
+            or declaration["schemaVersion"] != 1 or declaration["protocol"] != 1 \
+            or declaration["commands"] != ["mo2-release-notice-check", "open-updates"]:
+        return None
+    return host
 
 
 def physical_files(root):
@@ -515,5 +598,181 @@ class CollectionInstaller(mobase.IPlugin):
             QTimer.singleShot(0, self._window.close)
 
 
+class CollectionReleaseNotice(mobase.IPluginDiagnose):
+    PROBLEM_ID = 0
+
+    def __init__(self):
+        super().__init__()
+        self._organizer = None
+        self._root = None
+        self._window = None
+        self._probe = None
+        self._timer = None
+        self._stdout = bytearray()
+        self._notice = None
+
+    def name(self):
+        return "Chrome & Blood Release Notice"
+
+    def author(self):
+        return "Chrome & Blood"
+
+    def description(self):
+        return "Reports a newer authenticated Chrome & Blood release in Mod Organizer."
+
+    def version(self):
+        return mobase.VersionInfo(0, 1, 0)
+
+    def settings(self):
+        return []
+
+    def init(self, organizer):
+        self._organizer = organizer
+        self._root = Path(organizer.basePath()).absolute()
+        request = self._root / "cb-collection-request.json"
+        result = self._root / "cb-collection-result.json"
+        if os.path.isfile(extended(request)) and not os.path.exists(extended(result)):
+            return True
+        organizer.onUserInterfaceInitialized(self._ready)
+        application = QCoreApplication.instance()
+        if application is not None:
+            application.aboutToQuit.connect(self._cancel_probe)
+        return True
+
+    def activeProblems(self):
+        return [self.PROBLEM_ID] if self._notice is not None else []
+
+    def shortDescription(self, key):
+        self._require_problem(key)
+        version, release_date = self._notice
+        identity = version if release_date is None else f"{version} - {release_date}"
+        return f"A new version of Chrome & Blood is available ({identity})."
+
+    def fullDescription(self, key):
+        self._require_problem(key)
+        return self.shortDescription(key) + " Open the Chrome & Blood launcher to review the update."
+
+    def hasGuidedFix(self, key):
+        self._require_problem(key)
+        return True
+
+    def startGuidedFix(self, key):
+        self._require_problem(key)
+        try:
+            host = trusted_chrome_blood_host()
+        except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError, UnicodeDecodeError) as error:
+            raise ValueError("collection.release-host") from error
+        if host is None:
+            raise ValueError("collection.release-host")
+        started = QProcess.startDetached(str(host),
+                                         ["--open-updates", "--instance-root", str(self._root)],
+                                         str(host.parent))
+        if isinstance(started, tuple):
+            started = started[0]
+        if not started:
+            raise ValueError("collection.release-launch")
+
+    def _ready(self, window):
+        self._window = window
+        if hasattr(window, "destroyed"):
+            window.destroyed.connect(self._cancel_probe)
+        QTimer.singleShot(0, self._start_probe)
+
+    def _start_probe(self):
+        if self._probe is not None:
+            return
+        try:
+            host = trusted_chrome_blood_host()
+        except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError, UnicodeDecodeError):
+            return
+        if host is None:
+            return
+        process = QProcess()
+        process.setProgram(str(host))
+        process.setArguments(["--mo2-release-notice-check", "--instance-root", str(self._root)])
+        process.setWorkingDirectory(str(host.parent))
+        process.setProcessChannelMode(QProcess.ProcessChannelMode.SeparateChannels)
+        process.readyReadStandardOutput.connect(self._read_probe_output)
+        process.readyReadStandardError.connect(lambda: process.readAllStandardError())
+        process.finished.connect(self._probe_finished)
+        process.errorOccurred.connect(self._probe_failed)
+        timer = QTimer()
+        timer.setSingleShot(True)
+        timer.timeout.connect(self._probe_timed_out)
+        self._probe = process
+        self._timer = timer
+        self._stdout = bytearray()
+        process.start()
+        timer.start(12000)
+
+    def _read_probe_output(self):
+        process = self._probe
+        if process is None:
+            return
+        self._stdout.extend(bytes(process.readAllStandardOutput()))
+        if len(self._stdout) > MAXIMUM_NOTICE_OUTPUT_BYTES:
+            self._cancel_probe()
+
+    def _probe_finished(self, exit_code, exit_status):
+        process = self._probe
+        if process is None:
+            return
+        self._read_probe_output()
+        output = bytes(self._stdout)
+        normal = exit_status == QProcess.ExitStatus.NormalExit
+        self._release_probe()
+        if not normal or exit_code != 0 or not output:
+            return
+        try:
+            result = strict_json(output)
+        except (json.JSONDecodeError, UnicodeDecodeError, ValueError):
+            return
+        if not isinstance(result, dict) or result.get("schemaVersion") != 1 \
+                or result.get("status") != "update-available" \
+                or not isinstance(result.get("installedVersion"), str) \
+                or not isinstance(result.get("availableVersion"), str):
+            return
+        release_date = result.get("releaseDate")
+        if release_date is not None:
+            if not isinstance(release_date, str):
+                return
+            try:
+                if date.fromisoformat(release_date).isoformat() != release_date:
+                    return
+            except ValueError:
+                return
+        self._notice = (result["availableVersion"], release_date)
+        self._invalidate()
+
+    def _probe_failed(self, _):
+        self._release_probe()
+
+    def _probe_timed_out(self):
+        self._cancel_probe()
+
+    def _cancel_probe(self, *_):
+        process = self._probe
+        if process is not None:
+            process.kill()
+            process.waitForFinished(1000)
+        self._release_probe()
+
+    def _release_probe(self):
+        timer = self._timer
+        process = self._probe
+        self._timer = None
+        self._probe = None
+        self._stdout = bytearray()
+        if timer is not None:
+            timer.stop()
+            timer.deleteLater()
+        if process is not None:
+            process.deleteLater()
+
+    def _require_problem(self, key):
+        if key != self.PROBLEM_ID or self._notice is None:
+            raise IndexError(key)
+
+
 def createPlugins():
-    return [CuratedTreeInstaller(), CollectionInstaller()]
+    return [CuratedTreeInstaller(), CollectionInstaller(), CollectionReleaseNotice()]
